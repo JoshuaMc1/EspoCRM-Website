@@ -1,0 +1,137 @@
+:root {
+    --yellow: #dea700;
+    --brown: #4b3014;
+    --gray: #bdbdbd;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+.contenedor {
+    height: 95vh;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-image: url(../img/bg.svg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+}
+
+.features {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.features img {
+    width: 100px;
+    height: 100px;
+}
+
+.contenedor-banner {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.contenedor-banner img {
+    width: 200px;
+    height: 80px;
+}
+
+.text-contenedor {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    width: 30rem;
+    animation-name: floating;
+    animation-duration: 6s;
+    animation-iteration-count: infinite;
+    animation-timing-function: ease-in-out;
+}
+
+.texto-banner {
+    font-size: 20px;
+    color: white;
+    padding: 1.5rem;
+    color: var(--brown);
+    background-color: white;
+}
+
+.img-espo img {
+    animation-name: floating;
+    animation-duration: 6s;
+    animation-iteration-count: infinite;
+    animation-timing-function: ease-in-out;
+    width: 800px;
+    height: 550px;
+    box-shadow: rgba(0, 0, 0, 0.024) 0px 0px 0px 1px, rgba(0, 0, 0, 0.05) 0px 1px 0px 0px, rgba(0, 0, 0, 0.03) 0px 0px 8px 0px, rgba(0, 0, 0, 0.1) 0px 20px 30px 0px;
+}
+
+.img-espo {
+    transform: perspective(800px) rotateY(-8deg);
+    transition: transform 1s ease 0s;
+}
+
+.img-espo:hover {
+    transform: perspective(800px) rotateY(-4deg);
+}
+
+.img-logo {
+    width: 200px;
+    height: 70px;
+}
+
+.avatar {
+    width: 200px;
+    height: 200px;
+}
+
+.mb-10 {
+    margin-bottom: 5.5rem;
+}
+
+.bg-yellow {
+    background-color: var(--yellow);
+}
+
+.bg-gray {
+    background-color: var(--gray);
+}
+
+.bg-brown {
+    background-color: var(--brown);
+}
+
+.nav-link {
+    color: white;
+    background-color: var(--yellow);
+    transition-property: background-color;
+    transition-duration: 300ms;
+    font-size: 18px;
+}
+
+.nav-link:hover {
+    background-color: var(--brown);
+    color: white;
+}
+
+@keyframes floating {
+    0% {
+        transform: translate(0, 0px);
+    }
+
+    50% {
+        transform: translate(0, 10px);
+    }
+
+    100% {
+        transform: translate(0, -0px);
+    }
+}
